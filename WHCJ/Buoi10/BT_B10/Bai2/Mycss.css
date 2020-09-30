@@ -1,0 +1,23 @@
+*{
+	box-sizing: border-box;
+	padding: 0px;
+}
+#wrapper{
+	/*background: yellow;*/
+	width: 500px;
+	margin:0px auto;
+	min-height: 400px;
+
+}
+table{
+	width: 100%;
+	text-align: center;
+	height: 400px;
+}
+input{
+	width: 80%;
+	height: 25px;
+}
+.title{
+	width: 150px;
+}

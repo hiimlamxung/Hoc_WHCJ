@@ -1,0 +1,166 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 12px;
+}
+a{
+	text-decoration: none;
+}
+#wrapper{
+	margin: 0px auto;
+	width: 1010px;
+	min-height: 1000px;
+	background: #f4f4f4;
+	padding: 10px 0px 30px 10px;
+
+}
+.col-left{
+	width: 235px;
+	min-height: 500px;
+	/*background: yellow;*/
+	float:left;
+}
+.col-right{
+	width: 733px;
+	min-height: 1000px;
+	/*background: yellow;*/
+	float:left;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#search{
+	background: white;
+	width: 240px;
+	height: 62px;
+}
+form{
+	width: 100%;
+	padding: 15px 10px;
+	position: relative;
+
+}
+form input[type="text"]{
+	width: 220px;
+	height: 30px;
+
+}
+form input[type="image"]{
+	width: 20px;
+	position: absolute;
+	right: 17px;
+	top:19px;
+}
+#logo{
+	width: 100%;
+}
+#logo img{
+	width: 100%;
+}
+#danh_muc{
+	width: 100%;
+	min-height: 200px;
+	background: white;
+	padding-top:15px;
+	padding-left: 18px;
+	padding-right: 17px;
+	padding-bottom: 22px;
+	margin-top:-4px;
+
+}
+#danh_muc ul a li{
+	color: #7daa04;
+/*	background: yellow;*/
+	list-style-image: url('../images/list.jpg');
+	border-bottom: 1px dotted black;
+	padding: 10px 0px;
+	list-style-position: inside;
+	
+	color: #656565;
+	font-weight: bold;
+}
+#danh_muc ul a .active{
+	color: #7daa04;
+}
+#danh_muc ul a li:hover{
+	color: #7daa04;
+}
+#sale{
+	margin-top: 14px;
+	width: 100%;
+}
+#banner{
+	width: 100%;
+}
+.content_left{
+	float:left;
+}
+#content_sp ul a li img{
+	width: 100%;
+
+	
+}
+#content_sp ul a li{
+	margin-top:15px;
+	list-style-type: none;
+
+}
+#content_sp ul a .space_right{
+	margin-right: 14px;
+	
+}
+#footer{
+	background: white;
+	height: 45px;
+	width: 975px;
+	padding: 
+	background: yellow;
+	margin-top: 30px;
+	position: relative;
+	
+}
+.content{
+	/*background: orange;*/
+	min-height: 1070px;
+	width: 100%;
+}
+.ft_left{
+	float:left;
+}
+
+#copyright{
+/*	background: orange;*/
+	color: #2a2a2a;
+	font-weight: bold;
+	position: absolute;
+	top:15px;
+	left: 25px
+}
+#bread_cumb ul a li{
+	color: #2a2a2a;
+	float:left;
+/*	background: orange;*/
+	list-style: none;
+	border-right: 1px solid black;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+#bread_cumb ul a li:hover{
+	color: #7daa04;
+}
+#bread_cumb ul a #li_last{
+	border-right: none;
+}
+#bread_cumb ul a .active{
+	color: #7daa04;
+}
+#bread_cumb ul{
+	position: absolute;
+	top:15px;
+	right:7px;
+	
+
+}

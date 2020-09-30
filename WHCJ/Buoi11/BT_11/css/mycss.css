@@ -1,0 +1,63 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+#banner{
+	background-color: black;
+	height: 36px;
+}
+.navbar-default {
+    background-color: black;   
+}
+#logo1{
+	margin-left:200px;
+	width: 260px;
+	margin-top:0px;
+}
+#logo2{
+	width: 370px;
+}
+.navbar-form .form-control{
+	width: 391px;
+}
+.qc{
+	border: solid 1px black;
+	height: 162px;
+	width: 360px;
+}
+hr{
+	border-top:dashed 1px black;
+}
+.noidung{
+	height: 917px;
+
+}
+#danhmuc{
+	color: #f8bc02;
+	background: black;
+	font-weight: bold;
+}
+.content_item{
+	position: relative;
+	min-height: 50px;
+}
+.gia_km{
+	color: red;
+	font-weight: bold;
+	left: 0px;
+	top:20px;
+	position: absolute;
+	font-size: 17px;
+
+}
+.gia_goc{
+	text-decoration: line-through;
+	top:20px; 
+	right:0px;
+	position: absolute;
+	font-size: 15px;
+
+}
+#banner_2{
+	margin-top:-150px;
+}

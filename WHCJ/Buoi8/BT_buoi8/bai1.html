@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+	<style type="text/css">
+		input[type='text']{
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" name="" id="number" placeholder="Nhập 1 số trong khoảng 1-50"><br><br>
+	<input type="text" name="" id="result" readonly="" placeholder="kết quả"><br><br>
+	<input type="submit" name="" onclick="Tinh()" value="Tính giai thừa">
+	<script type="text/javascript">
+		function Tinh(){
+		var number=document.getElementById('number').value;
+		
+		var result=document.getElementById('result');
+		
+		if(number==''||isNaN(number)){
+			alert('Bạn nhập sai số,yêu cầu kiểm tra lại');
+		}
+		else if(number<1||number>50){
+			alert('Số bạn nhâp phải bắt đầu từ 1 đến 50, yêu cầu nhập lại');
+		}
+		else {
+			var kq=1;
+			
+			for( var i=1;i<=number;i++){
+
+				kq=kq*i;
+			}
+			result.value=kq;
+			
+		}
+		}
+		
+	</script>
+</body>
+</html>

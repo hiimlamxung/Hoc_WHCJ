@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		#wrapper{
+			width: 900px;
+			margin: 0px auto;
+
+		}
+		#slides{
+			position: relative;
+		}
+		#back{
+			position: absolute;
+			left:10px;
+			top:125px;
+			width: 10%;
+			cursor: pointer;
+		}
+		#next{
+			position: absolute;
+			right:10px;
+			top:125px;
+			width: 10%;
+			cursor: pointer;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var count;
+			$(".slides_img").each(function(){
+				if($(this).is(":visible")){
+					count=$(this).attr('count');
+					
+				}
+			});
+			$("#next").click(function(){
+				if(count==2){
+					count=-1;
+				}
+				count++;
+				console.log(count);
+				$(".slides_img").hide();
+				$(".slides_img").eq(count).show();
+				
+				
+
+			});
+			$("#back").click(function(){
+				if(count==-2){
+					count=1;
+				};
+				count--;
+				console.log(count);
+				$(".slides_img").hide();
+				$(".slides_img").eq(count).show();
+				
+				
+				
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<!-- //Tiìm hiểu css thuộc tính Cursor -->
+	<div id="wrapper">
+		<div id="slides">
+			<img src="pic1.png" class="slides_img" count="0" style="width: 100%;">
+			<img src="pic2.png" class="slides_img" count="1" style="width: 100%;display: none;">
+			<img src="pic3.png" class="slides_img" count="2"style="width: 100%;display: none;">
+			<img id="back" src="back.png">
+			<img id="next" src="next.png">
+		</div>
+	</div>
+</body>
+</html>

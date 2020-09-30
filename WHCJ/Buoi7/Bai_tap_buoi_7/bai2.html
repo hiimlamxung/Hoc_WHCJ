@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 2</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>Nhap do dai chieu thu nhat</td>
+			<td><input type="text" name="" id="dai"></td>
+		</tr>
+		<tr>
+			<td>Nhap do dai chieu thu hai</td>
+			<td><input type="" name="" id="rong"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button onclick="Tinh()" id="button">Tinh toan</button></td>
+		</tr>
+		<tr>
+			<td>Chu vi la</td>
+			<td><input type="text" name="" id="cv"></td>
+		</tr>
+		<tr>
+			<td>Dien tich la</td>
+			<td><input type="text" name="" id="dt"></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function Tinh(){
+
+		var length=document.getElementById('dai');
+		var width=document.getElementById('rong');
+		var result=document.getElementById('button');
+		var perimeter=document.getElementById('cv');
+		var acreage=document.getElementById('dt');	
+
+
+		console.log(length);
+		console.log(isNaN(length));
+		console.log(isNaN(width));
+					if(isNaN(length.value)||isNaN(width.value)){
+				alert('Bạn nhập sai số,yêu cầu kiểm tra lại');
+			}
+			else
+			{
+			perimeter.value=(parseInt(length.value)+parseInt(width.value))*2;
+			acreage.value=parseInt(length.value)*parseInt(width.value);
+			}
+		}
+		
+	</script>
+
+</body>
+</html>

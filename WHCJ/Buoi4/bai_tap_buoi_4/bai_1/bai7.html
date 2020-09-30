@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 7</title>
+	<style type="text/css">
+		body{
+			width: 1000px;
+		}
+		h2{
+			color: #237E08;
+		}
+		table,td{
+			border: solid 1px #237E08;
+			border-collapse: collapse;
+			background-color: #B3F49F;
+		}
+		table{
+			width: 40%;
+			color: #237E08;
+		}
+		.center{
+			text-align: center;
+		}
+		#red{color: red;}
+	</style>
+</head>
+<body>
+	<h2>Phiếu đăng ký tham gia chương trình khuyến mãi</h2>
+	<table border="1">
+		<tr>
+			<td>Họ và tên</td>
+			<td><input type="text" name="" required="" placeholder="Họ tên của bạn"></td>
+		</tr>
+		<tr>
+			<td>Địa chỉ</td>
+			<td><input type="text" required="" name=""></td>
+		</tr>
+		<tr>
+			<td>Điện thoại</td>
+			<td><input type="number" name="" required=""></td>
+		</tr>
+		<tr>
+			<td>Phái</td>
+			<td><input type="radio" name="phai" value="1" checked="" id="nam"><label for="nam">Nam </label><input type="radio" name="phai" value="0" id="nu"><label for="nu">Nữ </label></td>
+		</tr>
+		<tr>
+			<td>Nghề nghiệp</td>
+			<td>
+				<select>
+					<option>--Chọn nghề nghiệp--</option>
+					<option value="teacher">Giáo viên</option>
+					<option value="worker">Công nhân</option>
+					<option value="cast">Diễn viên</option>
+					<option value="dev">Developer</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Chọn sản phẩm tham gia</td>
+			<td>
+				<select>
+					<option value="toothpaste">Kem đánh răng</option>
+					<option value="cleanser">Sữa rửa mặt</option>
+					<option value="shampoo">Dầu gội đầu</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Số người dự đoán tham gia</td>
+			<td><input type="number" max="10000" name="" required="" placeholder="1000"></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="center"><input type="submit" name="" value="Đồng ý"></td>
+			
+		</tr>
+		<tr>
+			<td colspan="2" id="red" class="center">Bạn đã đăng ký thành công!!!</td>
+	
+		</tr>
+	</table>
+</body>
+</html>

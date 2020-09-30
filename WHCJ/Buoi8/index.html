@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n=prompt('Moi nhap so n');
+		function checkNto(){
+			var check=true;
+			if(n<2){
+				check=false;
+			}
+			else {
+				for(var i=2;i<=Math.sqrt(n);i++){
+					if(n%i==0){
+						check=false;
+						break;
+					}
+					else{
+						check=true;
+					}
+				}
+			}
+			if(check=false)
+			{
+				document.write('k phai la so nt');
+			}
+			else document.write(' la so nt');
+		}
+		checkNto();
+	</script>
+
+
+
+	<!-- <input type="radio" name="gender" checked="" value="nam">Nam
+	<input type="radio" name="gender"  value="nu">Nữ
+	<div id="kq"></div>
+	<script type="text/javascript">
+		var gender=document.getElementsByName('gender');
+		var kq=document.getElementById('kq');
+		for(var i=0;i<=gender.length;i++){
+			if(gender[i].checked==true){
+				kq.innerHTML=gender[i].value;
+			}
+		}
+	</script>
+ -->
+
+
+	<!-- <script type="text/javascript">
+		//Cách khai báo đối tượng 1.
+		var Person1= new Object();
+		Person1.name='Lam';
+		Person1.age=22;
+		Person1.address='HN';
+		document.write('Name: '+Person1.name);
+
+
+
+		//cách 2
+		var Person2= {};
+		Person2.name='Lam';
+		Person2.age=22;
+		Person2.address='HN';
+		document.write('Age: '+Person2.age);
+
+
+		//cách 3
+		var Person3={
+			name: 	"value", "Lam",
+			age: 	22,
+			address: 	'HN'
+		};
+		document.write("Địa chỉ "+ address+"<br>");
+
+
+
+
+		//Phương thức
+		var Person3={
+			name: 	"value", "Lam",
+			age: 	22,
+			address: 	'HN',
+
+			tenHam : function(){
+				document.write('Họ tên'+ this.name);
+			}
+
+		};
+		Person3.tenHam();
+	</script> -->
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Siêu thị đồ đôi</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/mycss.css">
+
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="banner">
+				<a href="#"><img src="images/logo.png" id="logo_img"></a>
+				<div id="contact">
+					<img src="images/icon_phone.png">
+					<a href="#"><div id="phone">0966.028.013</div></a>
+				</div>
+			</div>
+			<nav class="navbar navbar-default" role="navigation">
+					<div class="collapse navbar-collapse navbar-ex1-collapse" id="nav_me">
+						<ul class="nav navbar-nav">
+							<li><a class="active" href="#">TRANG CHỦ</a></li>
+							<li><a href="#">QUẦN ÁO BỐN MÙA</a></li>
+							<li><a href="#">PHỤ KIỆN ĐÔI</a></li>
+							<li><a href="#">ĐỒ DÙNG ĐÔI</a></li>
+							<li><a href="#">HÀNG ORDER</a></li>
+							<li><a href="#">LIÊN HỆ</a></li>
+						</ul>
+						<form class="navbar-form navbar-left" role="search" id="form_nav">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" required="">
+								<input type="image" name="" src="images/icon_search.png">
+							</div>
+						</form>
+					</div>
+				
+			</nav>
+			<div id="gioithieu">
+				<div id="slides">
+					<a href=""><img src="images/slides/baner01.jpg" count="0"  class="slides_img" id="slide0"></a>
+					<a href=""><img src="images/slides/baner02.jpg" count="1"  class="slides_img" id="slide1"></a>
+					<a href=""><img src="images/slides/baner03.jpg" count="2"  class="slides_img" id="slide2"></a>
+					<img src="images/icon_next.png" class="icon" id="icon_next">
+					<img src="images/icon_back.png" class="icon" id="icon_back">
+				</div>
+			</div>
+			<div id="sanpham">
+				<div id="title_sp">
+					<div id="vuong" class="float_title"></div>
+					<span class="float_title">SẢN PHẨM MỚI NHẤT</span>
+				</div>
+				<div id="danhsach">
+					<div class="sp">
+						<a href="#"><img src="images/product/pro1.jpg" class="img_sp"></a>
+						<div class="content_sp">
+							<p class="mau">Mẫu 002</p>
+							<p class="gia">Giá: 1.000.000 VNĐ</p>
+							<button><b>MUA NGAY</b></button>
+						</div>
+
+					</div>
+
+					<div class="sp">
+						<a href="#"><img src="images/product/pro2.jpg" class="img_sp"></a>
+						<div class="content_sp">
+							<p class="mau">Mẫu 002</p>
+							<p class="gia">Giá: 1.000.000 VNĐ</p>
+							<button><b>MUA NGAY</b></button>
+						</div>
+
+					</div>
+
+					<div class="sp">
+						<a href="#"><img src="images/product/pro3.jpg" class="img_sp"></a>
+						<div class="content_sp">
+							<p class="mau">Mẫu 002</p>
+							<p class="gia">Giá: 1.000.000 VNĐ</p>
+							<button><b>MUA NGAY</b></button>
+						</div>
+
+					</div>
+
+					<div class="sp">
+						<a href="#"><img src="images/product/pro4.jpg" class="img_sp"></a>
+						<div class="content_sp">
+							<p class="mau">Mẫu 002</p>
+							<p class="gia">Giá: 1.000.000 VNĐ</p>
+							<button><b>MUA NGAY</b></button>
+						</div>
+
+					</div>
+
+					<div class="sp">
+						<a href="#"><img src="images/product/pro1.jpg" class="img_sp"></a>
+						<div class="content_sp">
+							<p class="mau">Mẫu 002</p>
+							<p class="gia">Giá: 1.000.000 VNĐ</p>
+							<button><b>MUA NGAY</b></button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+				<img id="link_web" src="images/logo_footer.png">
+				<div id="copy_right">©2012 Sieuthidodoi.com giữ toàn bộ bản quyền. Chi tiết xin vui lòng liên hệ theo số điện thoại : 0966.028.013 <br>Mọi thông tin đăng tải lại phải ghi rõ nguồn sieuthidodoi.com</div>
+		</div>
+		
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var count;
+				var img_start=$(".slides_img:first-child").attr("count");
+				var img_end=$(".slides_img:last").attr("count");
+				$(".slides_img").each(function(){
+					if($(this).is(":visible")){
+						count=$(this).attr("count");
+					}
+				});
+
+				$("#icon_next").click(function(){
+					if(count==img_end){
+						count=-1;
+					}
+					count++;
+					console.log(count);
+					$(".slides_img").hide();
+					$(".slides_img").eq(count).show();
+				});
+				$("#icon_back").click(function(){
+					if(count==img_start){
+						count=img_end;
+						count++;
+					}
+					count--;
+					console.log(count);
+					$(".slides_img").hide();
+					$(".slides_img").eq(count).show();
+				});
+			});
+		</script>
+
+	</body>
+</html>

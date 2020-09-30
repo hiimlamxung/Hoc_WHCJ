@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var Person={
+			data : [
+				{
+					id:'nv01',
+					name:"Trinh Khac Tung",
+					email:"khactung7@gmail.com",
+					phone:'0392304893'
+				},
+
+				{
+					id:'nv02',
+					name:"Hoang Van Lam",
+					email:"lamxung7@gmail.com",
+					phone:'0399728339'
+				},
+				//Có rất nhiều nhân viên
+			],
+
+			viewPerson:function(){
+				var listData=this.data;
+				for(var i=0;i<listData.length;i++){
+					document.write(listData[i].id+" | "+listData[i].name+" | "+listData[i].email+" | "+listData[i].phone+" <br>");
+				}
+
+
+			},
+
+			addPerson:function(id,name,email,phone){
+					var item={
+						id : id,
+						name : name,
+						email : email,
+						phone : phone,
+					};
+
+					this.data.push(item);
+
+			},
+
+			removePerson:function(id){
+				var listData=this.data;
+				for(var i=0;i<listData.length;i++){
+					if(listData[i].id==id){
+						listData.splice(i,1);
+					}
+
+				}
+
+			},
+
+
+			updatePerson:function(id,name,email,phone){
+				var listData=this.data;
+				for(var i=0;i<listData.length;i++){
+					if(listData[i].id==id){
+						listData[i].name=name;
+						listData[i].email=email;
+						listData[i].phone=phone;
+					}
+				}
+			}
+		}
+
+
+		
+		document.write("Danh sach nhan vien cong ty:<br>");
+		//Hien thi
+		Person.viewPerson();
+
+		//Them nguoi moi
+		Person.addPerson('nv03','Tifa','Tifa@gmail.com','0329983992');
+		Person.addPerson('nv04','Aerith','Aerith@gmail.com','0328394003');
+		document.write("<br>Danh sach nhan vien sau khi them:<br>");
+		Person.viewPerson();
+		//Xoa nhan vien 02
+		Person.removePerson('nv02');
+		document.write("<br>Danh sach nhan vien sau khi xoa:<br>");
+		Person.viewPerson();
+
+
+
+
+		//Sua nv01
+		Person.updatePerson('nv01','TungTK','TungTK@gmail.com','0399999992')
+		document.write("<br>Danh sach nv sau khi sua la <br>");
+		Person.viewPerson();
+
+
+	</script>
+</body>
+</html>

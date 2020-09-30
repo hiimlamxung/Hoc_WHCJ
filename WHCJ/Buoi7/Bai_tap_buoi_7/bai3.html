@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 3</title>
+	<style type="text/css">
+		td{
+			width: 200px;
+			height: 25px;
+		}
+	</style>
+</head>
+<body>
+	<table border="1" >
+		<tr>
+			<td>Nhap a</td>
+			<td><input type="text" name="" id="NumberA"></td>
+		</tr>
+		<tr>
+			<td>Nhap b</td>
+			<td><input type="text" name="" id="NumberB"></td>
+		</tr>
+		<tr>
+			<td>Nhap c</td>
+			<td><input type="text" name="" id="NumberC"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button id="button" onclick="Tinh()">Giai phuong trinh</button></td>
+			
+		</tr>
+		<tr>
+			<td style="height: 100px;">Ket qua</td>
+			<td style="height: 100px;"><div id="div"></div></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function Tinh(){
+		var number1=document.getElementById('NumberA');
+		var number2=document.getElementById('NumberB');
+		var number3=document.getElementById('NumberC');
+		var result=document.getElementById('div');
+		var active=document.getElementById('button');
+
+		var a=parseFloat(number1.value);
+		var b=parseFloat(number2.value);
+		var c=parseFloat(number3.value);
+		var alpha=(b*b)-(4*a*c);
+		var x1=(-b+Math.sqrt(alpha))/(2*a);
+		var x2=(-b-Math.sqrt(alpha))/(2*a);
+		var x_double=(-b)/(2*a);
+		
+		
+		
+			if(isNaN(number1.value)||isNaN(number2.value)||isNaN(number3.value)){
+				alert('Bạn nhập sai số yêu cầu nhập lại');
+			}
+			else if(number1.value==0||number1.value==''||number2.value==''||number3.value==''){
+				result.innerHTML='Đây không phải là phương trình bậc 2,yêu cầu xem lại';
+			}
+			else if((number1.value)!=0){
+				if(alpha>0){
+					result.innerHTML="Phương trình có 2 nghiệm phân biệt <br> x1= "+ x1+"    "+"x2="+x2;
+				}
+				else if (alpha==0) {
+					result.innerHTML="Phương trình có 2 nghiệm kép x1=x2= "+x_double;
+				}
+				else if(alpha<0){
+					result.innerHTML="Phương trình vô nghiệm";
+				}
+			}
+
+		}
+		
+		
+	</script>
+</body>
+</html>

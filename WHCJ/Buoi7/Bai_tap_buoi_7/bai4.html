@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<label>Number 1</label><input type="text" name="" id="number1"><br><br>
+	<label>Number 2</label><input type="text" name="" id="number2"><br><br>
+	<input type="submit" name="" value="Cộng" onclick="cong()"> 
+	<input type="submit" name="" value="Trừ" onclick="tru()"> 
+	<input type="submit" name="" value="Nhân" onclick="nhan()"> 
+	<input type="submit" name="" value="Chia" onclick="chia()"> 
+	<input type="submit" name="" value="%" onclick="chialaydu()"> <br><br>
+	<label>Kết quả</label><input type="text" name="" id="ketqua">
+	<script type="text/javascript">
+	
+		function cong(){
+		var num1=document.getElementById('number1');
+		var num2=document.getElementById('number2');
+		var a=parseFloat(num1.value);
+		var b=parseFloat(num2.value);
+		var result=document.getElementById('ketqua');
+		if(num1.value==''||num2.value==''||isNaN(num1.value)||isNaN(num2.value)){
+			alert('Bạn nhập sai số,yêu cầu kiểm tra lại');
+			}
+			else result.value=a+b;
+		}
+		function tru(){
+		var num1=document.getElementById('number1');
+		var num2=document.getElementById('number2');
+		var a=parseFloat(num1.value);
+		var b=parseFloat(num2.value);
+		var result=document.getElementById('ketqua');
+		if(num1.value==''||num2.value==''||isNaN(num1.value)||isNaN(num2.value)){
+			alert('Bạn nhập sai số,yêu cầu kiểm tra lại');
+			}
+			else result.value=a-b;
+		}
+
+		function nhan(){
+		var num1=document.getElementById('number1');
+		var num2=document.getElementById('number2');
+		var a=parseFloat(num1.value);
+		var b=parseFloat(num2.value);
+		var result=document.getElementById('ketqua');
+		if(num1.value==''||num2.value==''||isNaN(num1.value)||isNaN(num2.value)){
+			alert('Bạn nhập sai số,yêu cầu kiểm tra lại');
+			}
+			else result.value=a*b;
+		}
+		function chia(){
+		var num1=document.getElementById('number1');
+		var num2=document.getElementById('number2');
+		var a=parseFloat(num1.value);
+		var b=parseFloat(num2.value);
+		var result=document.getElementById('ketqua');
+		if(num1.value==''||num2.value==''||isNaN(num1.value)||isNaN(num2.value)){
+			alert('Bạn nhập sai số,yêu cầu kiểm tra lại');
+			}
+			else result.value=a/b;
+		}
+		function chialaydu(){
+		var num1=document.getElementById('number1');
+		var num2=document.getElementById('number2');
+		var a=parseFloat(num1.value);
+		var b=parseFloat(num2.value);
+		var result=document.getElementById('ketqua');
+		if(num1.value==''||num2.value==''||isNaN(num1.value)||isNaN(num2.value)){
+			alert('Bạn nhập sai số,yêu cầu kiểm tra lại');
+			}
+			else result.value=a%b;
+		}
+
+
+
+
+
+
+	</script>
+</body>
+</html>

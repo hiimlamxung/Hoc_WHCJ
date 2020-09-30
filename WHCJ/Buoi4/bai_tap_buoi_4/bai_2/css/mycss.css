@@ -1,0 +1,57 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+#wrapper{
+	width: 960px;
+	padding:0px;
+	margin: 0px auto;
+	border: solid 2px red;
+}
+#banner1{
+	width: 100%;
+	height: 70px;
+	background:grey;
+
+}
+#banner2{
+	width: 100%;
+	height: 250px;
+	background: yellow;
+
+}
+#search
+{
+	width: 100%;
+	height: 25px;
+	background: black;
+}
+#left{
+	width: 250px;
+	min-height: 500px;
+	background-color: orange;
+}
+#right{
+	width: 710px;
+	min-height: 500px;
+	
+}
+.content{
+	float: left;
+}
+#main{
+	width: 100%;
+	min-height: 500px;
+	border: solid 2px blue; 
+}
+#footer{
+	width: 100%;
+	min-height: 500px;
+	background: orange;
+	border: solid 2px green;
+
+}
+img{
+	width: 100%;
+
+}

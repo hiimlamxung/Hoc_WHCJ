@@ -1,0 +1,86 @@
+thẻ <div> sd để định nghĩa 1 khu vực tài liệu của bạn. Nhóm các khu vực lớn của các phần tử html vs nhau định dạng chúng vs CSS.
+Quy ước đặt id và class: ko đc đặt quá dài, ko đc có dấu cách,k đc có dấu. Class có thể đặt chung giống nhau, id phải ko đc đặt trùng ( là giá trị duy nhất trong html). Class dùng ở mọi nơi html,có thể dùng đi dùng lại
+
+//Phần từ có thể có nhiều class
+<p class="school home account">it- plus </p> 
+//html5 cung cấp thêm nhiều thẻ mới hơn html: audio,video,header,footer,.....
+
+<div id="wrapper">
+		<div id="header"> banner,hình ảnh,video</div>
+		<div id="main">
+				<div id="left" class="content"></div>
+				<div id="right" class="content"></div>
+
+		</div>
+</div>
+<!-- HTML-5 tác dụng tương tự như đoạn trên-- >
+<header></header>
+<section id="" class="">
+	<nav></nav>
+	<article></article>
+</section>
+
+
+thẻ <canvas> sd để vẽ đồ họa nhanh chóng thông qua Js.Tìm hiểu thêm W3School.
+
+-ảnh .png là ảnh k có nền. 
+
+<table border="1" cellspacing="5" cellpadding="5">
+	<thead>
+		<tr>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+		
+	</thead>
+
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+cellpadding: khoảng cách nội dùng với table, cellspacing: khoảng cách trắng của viền border.
+<th> biểu diễn cho tiêu đề(nội dung sẽ được in đậm)
+-Colspan: gộp nhiều cột vs nhau,rowspan: gộp nhiều dòng
+
+Tìm hiểu thẻ <pre></pre>:hiện thị đúng vị trí như văn bản bạn đã gõ.
+
+<form action="" name="frm_register" method="" id="" class="">
+		<label for="name">Họ tên</label>
+		<input required min="15" type="text" name="name" id="name" placeholder="Nhập tên bạn"><br/><br/>
+		<label for="phone">Số điện thoại</label>
+		<input type="number" name="phone" id="phone"><br/><br/>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email">
+		<label for="pass">Mật khẩu</label>
+		<input type="password" name="pass" id="pass">
+		<label for="img">hình ảnh</label>
+		<input type="file" name="avatar" id="img">
+		<textarea name="" id="" cols="3" rows="5" placeholder="Ghi chú"></textarea>
+		<label for="gender">Giới tính</label>
+		<label>
+			<input type="radio" name="gioitinh" value="1" checked>Nam<input type="radio" name="gioitinh" value="0">Nữ
+		</label>
+		<label for="">Sở thích</label>
+		<input type="checkbox" name="bongda" value="bóng đá" checked>Bóng đá
+		<input type="checkbox" name="bongchuyen" value="bóng chuyền">Bóng chuyền
+		<input type="checkbox" name="bongban" value="bóng bàn">Bóng bàn
+		<select name="city" id="">
+			<option value="">--Chọn thành phố</option>
+			<optgroup label="Miền Bắc">
+			<option value="Hà Nội">Hà Nội</option><option value="Hà Nam">Hà Nam</option>
+			</optgroup>
+			<optgroup label="Miền Nam">
+				<option value="TP HCM">TP HCM</option><option value="Ca mau">Cà Mau</option>
+			</optgroup>
+		</select>
+		<input type="submit" value="Đăng ký">
+		<input type="reset" name="nhaplai">
+	
+
+
+</form>

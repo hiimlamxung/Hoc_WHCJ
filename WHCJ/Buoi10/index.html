@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquerry</title>
+	<style type="text/css">
+
+		.check{
+			color: red;
+			font-size: 30px;
+		}
+		.check2{
+			color: blue;
+			font-size: 30px;
+		}
+	</style>
+	<script type="" src="jquery-3.5.0.min.js"></script>
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("h1").text("Hello"); // tương tự với document.write
+			$("#show").html("Xin chao cac ban !"); // tương tự với innerHTML
+
+
+
+			$("#show2").text('some text');
+			$(".title").html( '<span style="color: red";> some text </span>');
+
+			$(".getNumber").click(function(){
+				var number=$(this).val();
+				alert(number);
+			});
+
+			$("#head p").click(function(){
+				$("#head p").hide();
+			});
+
+			// $("h5").css("color","green");
+			// $("h5").css("background-color","yellow");
+			// hoặc viết như này nếu có nhiều css
+			$("h5").css({"color":"green", "background-color":"yellow",});
+
+
+			$("#show3 p").addClass('check');
+			$("#show3 button").click(function(){
+				$("#show3 p").addClass("check2");
+				
+			});
+
+
+
+
+
+			$('#check_key_up').keyup(function(){
+				var txt=$("#check_key_up").val();
+				$('#show_key_up').html(txt);
+			});
+
+
+
+
+
+			$("h6").eq(0).css({
+				"color":"red",
+				"background-color":"yellow",
+			});
+
+			
+
+
+		});
+	</script>
+</head>
+<body>
+	<h1></h1>
+	<p id="show"></p>
+
+
+
+
+
+	<p id="show2"> </p>
+	<p class="title"></p><br>
+	<button value="1" class="getNumber">1</button>
+	<button value="2" class="getNumber" id="so2">2</button>
+	<button value="3" class="getNumber">3</button>
+	<button value="4" class="getNumber">4</button>
+
+	<div id="head">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est doloremque fugiat vero dolores nobis vel dolor possimus et perspiciatis, ipsum provident at explicabo commodi, magni debitis aliquid blanditiis repellat, consequuntur.
+		</p>
+	</div>
+
+
+	<h5>
+		Xin chao cac ban
+	</h5>
+
+
+	<div id="show3">
+	<p>Check Email</p>
+	<button id="addCss">Đổi màu</button>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<input type="text" name="" id="check_key_up">
+	<p id="show_key_up"></p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+<h6>Oke the h6</h6>
+<h6>Oke the h6</h6>
+<h6>Oke the h6</h6>
+<h6>Oke the h6</h6>
+<h6>Oke the h6</h6>
+<h6>Oke the h6</h6>
+<h6>Oke the h6</h6>
+<h6>Oke the h6</h6>
+</body>
+</html>

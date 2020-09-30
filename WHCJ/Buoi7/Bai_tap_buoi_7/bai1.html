@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+	<table border="1" >
+		<tr>
+			<td>Number 1</td>
+			<td><input type="text" name="" id="number1"></td>
+		</tr>
+		<tr>
+			<td>Number 2</td>
+			<td><input type="text" name="" id="number2"></td>
+		</tr>
+		<tr>
+			<td>Option</td>
+			<td>
+				<select id="select">
+					<option value="plus">Plus</option>
+					<option value="sub">Subtrat</option>
+					<option value="mul">Multiply</option>
+					<option value="div">Divide</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Result</td>
+			<td> <input type="text" name="" id="result"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" name="" id="submit" onclick="Tinh(); "></td>
+			
+		</tr>
+	</table>
+	<script type="text/javascript">	
+		function Tinh(){
+			var num1=document.getElementById('number1');
+			var num2=document.getElementById('number2');
+			var button=document.getElementById('submit');
+			var kq=document.getElementById('result');
+			var list=document.getElementById('select').value;
+			var a=parseFloat(num1.value);
+			var b=parseFloat(num2.value);
+			
+				if(num1.value==''||num2.value==''||isNaN(num1.value)||isNaN(num2.value)){
+					alert('Bạn nhâp sai số,yêu cầu kiểm tra lại');
+				}
+				else if(list=='plus'){
+					kq.value=a+b;
+				}
+				else if(list=='sub'){
+					kq.value=a-b;
+				}
+				else if(list=='mul'){
+					kq.value=a*b;
+				}
+				else if(list=='div'){
+					kq.value=a/b;
+				}
+			}
+		
+
+	</script>
+</body>
+</html>

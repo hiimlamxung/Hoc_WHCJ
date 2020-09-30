@@ -1,0 +1,149 @@
+*{
+	margin:0px;
+	font-family: sans-serif;
+}
+#wrapper{
+	margin: 0px auto;
+	
+	width: 1200px;
+	min-height: 1800px;
+	
+}
+#banner{
+	width: 100%;
+	min-height: 100px;
+	background: #444C4C;
+	position: relative;
+}
+#logo{
+	position: absolute;
+	top:30px;
+	left:200px;
+
+}
+#list{
+	position: absolute;
+	right:100px;
+}
+li{
+	float: left;
+	list-style-type: none;
+	padding: 40px 20px;
+	color: white;
+
+}
+ul a{
+	float:left;
+}
+
+li:hover{
+	background: #212020;
+	
+	color: #4B6C6A;
+}
+
+.floatbanner{
+float: left;
+}
+#main{
+	width:80%;
+	margin:0px auto;
+	min-height: 1400px;
+
+}
+.floatbox{
+	position: relative;
+	width: 31%;
+	min-height: 380px;
+	background: #EAEDED;
+	color: black;
+	float:left;
+	margin:20px 10px;
+}
+.floatbox img{
+	width: 100%;
+}
+.fontsmall{
+	font-size: 15px;
+	padding: 0px 10px;
+	color: #606060;
+}
+.calendar{
+	position: absolute;
+	display: inline;
+	top:352px; left:10px;
+}
+
+.comments{
+	position: absolute;
+	display: inline;
+	top: 350px; right:10px;
+}
+hr{
+	width: 80%;
+	margin:0px auto;
+}
+#submit1{
+	background: #4ABED7;
+	color: white;
+	border-radius: 4px;
+	height: 30px;
+	padding: 5px 15px;
+	margin-left: 20px;
+}
+#footer1{
+	width: 100%;
+	min-height: 200px;
+	background: #444C4C;
+
+}
+#outsite{
+	margin:20px auto;
+	min-height: 400px;
+	width: 90%;
+
+}
+.floatft{
+	float:left;
+	width: 20%;
+	color: white;
+	margin: 40px 25px;
+	font-size: 14px;
+}
+form input,textarea{
+	background: #293335;
+	color: white;
+	border:none;
+	margin:5px;
+}
+input[type="submit"]{
+	background:  #4ABED7;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+
+}
+input[type="text"]{
+	height: 30px;
+	width: 200px;
+}
+#footer2{
+	margin-top:-20px;
+	background: #293335;
+	width: 100%;
+	min-height: 100px;
+	position: relative;
+}
+.floatft2{
+	float:left;
+}
+#nocoppy{
+	position: absolute;
+	top:35px;
+	left:129px;
+}
+#listicon{
+	position: absolute;
+	top:35px;
+	right:129px;
+}

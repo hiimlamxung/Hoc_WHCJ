@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Buổi 4:Học CSS</title>
+	<style type="text/css">
+		@font-face{
+			font-family: 'ongdo';
+			src: url('./fonts/ongdo.ttf');/*add thêm font ông đồ nếu trình duyệt k có*/
+		}
+		#p1 {
+
+			color: blue !important; //important là ưu tiên css này
+			background-image: url("https://znews-photo.zadn.vn/w660/Uploaded/cqdhmdxwp/2019_12_30/trucanh1.jpg");
+			background-repeat: no-repeat; // ko cho lặp hình nền background
+			background-attachment: fixed; // 2 giá trị là scroll và fixed
+			background-position: 50px 100px; /*background-position: center top; or bottom or right,left*/
+			background-image: linear-gradient(to bottom, yellow,red,blue);
+
+			/*Cách viết css ngắn gọn
+			background: blue url("https://znews-photo.zadn.vn/w660/Uploaded/cqdhmdxwp/2019_12_30/trucanh1.jpg") no-repeat fixed 50px 100px*/
+		}
+		h1,h2,h3,h4,h5{
+			color: yellow;
+		}
+		//selector theo attributes
+		input[type="text"]{
+			border: solid 1px red
+		}
+		#div1{
+			width: 500px;height: 500px;
+			background: green;
+			font-style: italic;
+			text-align: justify;
+
+		}
+/*		text-align: center hoặc jutify
+*/	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<p id="p1">
+		AAAAAAAAAAAÂ
+	</p>
+
+	<h1>gggg</h1>
+	<h2>gggg</h2>
+	<h3>ggg</h3>
+	<h4>gggg</h4>
+	<form>
+		name:<input type="text" name="">
+		email:<input type="email" name="">
+		phone:<input type="number" name="">
+	</form>
+	<div id="div1">
+		<p>Thư mời làm việc</p>
+
+		
+	</div>
+
+</body>
+</html>

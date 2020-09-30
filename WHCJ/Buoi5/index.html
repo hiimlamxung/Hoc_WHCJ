@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#p1{
+				width: 300px;
+				height: 300px;
+				background: yellow;
+				overflow: visible; /*giá trị mặc định. visibile,hidden,scroll,auto.*/
+		}
+		#div1{
+			background: yellow;
+			width: 300px;
+			height:300px;
+			padding-top: 30px;
+			padding-left: 30px;
+			/*Dùng padding sẽ có thể làm to kích cỡ của thẻ vào 1 số trường hợp*/
+			/*padding: 30px 20px 0px 50px; top-right-bottom-left (chiều kim đồng hồ)*/
+			/*padding: 50px 40px; top-bottom 50px và left-right 40px8*/
+		}
+		#div2{
+			background: yellow;
+			width: 300px;
+			height:300px;
+			/*margin-bottom: 20px;*/
+			margin: 30px 50px 0px 20px;tương tự giống như padding
+			
+		}
+		#div3{
+			background: red;
+			width: 300px;
+			height:300px;
+			
+		}
+		img{
+			position: absolute;
+			top:30px;
+			left:100px;
+			width: 10%;
+			/*visibility: visible; tương tự giống display: none; để ẩn nội dung*/
+		}
+		/*khai báo hàm meta và media để thay đổi áp dụng css cho thiết bị điện thoại khác
+		<meta name="viewport".....
+		@media screen and (max-device-width: 480px){
+			body{
+				color:green;
+			}
+			
+		}*/
+
+		/*Khi dùng Position: absolute or relative thì chỉ cần dùng top-left-right-bottom thôi,không dùng margin-top,right,left,bot...*/
+
+		/*Thuộc tính z-index chỉ dùng được cho những thẻ đã đc đánh dấu position: absolute or relative.*/
+	</style>
+</head>
+<body>
+	<!-- <p id="p1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae in quod fugit, quam ipsa, eaque fugiat exercitationem ab eveniet voluptate consequatur blanditiis iste quasi ea expedita. Labore asperiores sint cum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae in quod fugit, quam ipsa, eaque fugiat exercitationem ab eveniet voluptate consequatur blanditiis iste quasi ea expedita. Labore asperiores sint cum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae in quod fugit, quam ipsa, eaque fugiat exercitationem ab eveniet voluptate consequatur blanditiis iste quasi ea expedita. Labore asperiores sint cum.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae in quod fugit, quam ipsa, eaque fugiat exercitationem ab eveniet voluptate consequatur blanditiis iste quasi ea expedita. Labore asperiores sint cum.
+	</p>  -->
+	<!-- <div id="div1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus consequatur labore reprehenderit quia cupiditate praesentium, quidem quo iure dolorem. Labore maxime unde quos dicta adipisci atque, ducimus consectetur voluptatibus sed.
+	</div> -->
+	<div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+	</div>
+	<!-- <div id="div4">
+		<img src="https://thoughtcatalog.files.wordpress.com/2018/05/questionstoaskagirl2.jpg?w=1920&h=1280&crop=1&resize=1920,1280&quality=95&strip=all">
+		<div>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis quod nihil ea rem odit pariatur atque numquam magni reiciendis, libero harum iusto animi quo velit nam, perferendis optio tempora.</div>
+		<div>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis quod nihil ea rem odit pariatur atque numquam magni reiciendis, libero harum iusto animi quo velit nam, perferendis optio tempora.</div>
+		<div>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis quod nihil ea rem odit pariatur atque numquam magni reiciendis, libero harum iusto animi quo velit nam, perferendis optio tempora.</div>
+		<div>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis quod nihil ea rem odit pariatur atque numquam magni reiciendis, libero harum iusto animi quo velit nam, perferendis optio tempora.</div>
+		<div>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. A veritatis quod nihil ea rem odit pariatur atque numquam magni reiciendis, libero harum iusto animi quo velit nam, perferendis optio tempora.</div>
+	</div> -->
+</body>
+</html>

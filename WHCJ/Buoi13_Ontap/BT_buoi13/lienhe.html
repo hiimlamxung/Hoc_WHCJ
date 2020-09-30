@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Liên hệ</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/csslienhe.css">
+		<script type="text/javascript" src="js/Myjs.js"></script>
+</head>
+<body>
+	
+	<div id="wrapper">
+			<div id="banner">
+				<a href="#"><img src="images/logo.png" id="logo_img"></a>
+				<div id="contact">
+					<img src="images/icon_phone.png">
+					<a href="#"><div id="phone">0966.028.013</div></a>
+				</div>
+			</div>
+			<nav class="navbar navbar-default" role="navigation">
+					<div class="collapse navbar-collapse navbar-ex1-collapse" id="nav_me">
+						<ul class="nav navbar-nav">
+							<li><a  href="#">TRANG CHỦ</a></li>
+							<li><a href="#">QUẦN ÁO BỐN MÙA</a></li>
+							<li><a href="#">PHỤ KIỆN ĐÔI</a></li>
+							<li><a href="#">ĐỒ DÙNG ĐÔI</a></li>
+							<li><a href="#">HÀNG ORDER</a></li>
+							<li><a class="active" href="#">LIÊN HỆ</a></li>
+						</ul>
+						<form class="navbar-form navbar-left" role="search" id="form_nav">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" required="">
+								<input type="image" name="" src="images/icon_search.png">
+							</div>
+						</form>
+					</div>
+				
+			</nav>
+			<form action="" method="POST" role="form" id="form_lienhe" onsubmit="return Get()">
+				<legend>Liên hệ tới Sieuthidodoi.com</legend>
+			
+				<div class="form-group">
+					<label for="name">Họ tên</label><span id="error_name" class="error">(*)</span>
+					<input type="text" class="form-control" id="name" placeholder="Input field" onblur="Blurname()">
+					<label for="sdt">Số điện thoại</label><span id="error_sdt" class="error">(*)</span>
+					<input type="text" class="form-control" id="sdt" placeholder="Input field" onblur="Blursdt()">
+					<label for="email">Email</label><span id="error_email" class="error">(*)</span>
+					<input type="text" class="form-control" id="email" placeholder="Input field" onblur="Bluremail()">
+					<label for="noidung_txt">Nội dung</label><span id="error_noidung" class="error">(*)</span>
+					<textarea class="form-control" id="noidung_txt" rows="15" onblur="Blurnoidung()"></textarea>
+					
+
+				</div>
+			
+				
+			
+				<button type="submit" class="btn btn-primary">Gửi liên hệ</button>
+			</form>
+			
+		</div>
+		<div id="footer">
+				<img id="link_web" src="images/logo_footer.png">
+				<div id="copy_right">©2012 Sieuthidodoi.com giữ toàn bộ bản quyền. Chi tiết xin vui lòng liên hệ theo số điện thoại : 0966.028.013 <br>Mọi thông tin đăng tải lại phải ghi rõ nguồn sieuthidodoi.com</div>
+		</div>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 2</title>
+</head>
+<body>
+	
+		<label for="hoten">Họ tên</label><input type="text" name="" id="hoten"><br><br>
+		<label for="sdt">Số điện thoại</label><input type="number" name="" id="sdt"><br><br>
+		<label>Giới tính</label><input type="radio" name="gender" id="nam"  value="nam"><label for="nam">Nam</label>
+		<input type="radio" name="gender" id="nu" checked value="nữ"><label for="nu">Nữ</label><br><br>
+		<label>Sở thích:</label><br>
+		<label for="bongda">Bóng đá</label><input type="checkbox" name="sothich" id="bongda" checked="" value="Bóng đá">
+		<label for="music">Nghe nhạc</label><input type="checkbox" name="sothich" id="music" value="Nghe nhạc">
+		<label for="docsach">Đọc sách</label><input type="checkbox" name="sothich" id="docsach" value="Đọc sách"><br><br>
+		<input type="submit" name="" id="submit" value="Lấy thông tin" onclick="Get();"><br><br>
+		<div id="kq"></div>
+		<!-- <textarea cols="50" rows="15" id="kq"></textarea><br> -->
+		
+		
+		
+		
+	
+	<script type="text/javascript">
+		function Get(){
+		var hoten=document.getElementById('hoten').value;
+		var sdt=document.getElementById('sdt').value;
+		var gender=document.getElementsByName('gender');
+		var sothich=document.getElementsByName('sothich');
+		var kq=document.getElementById('kq');
+
+		var a=' '
+		for(var j=0;j<sothich.length;j++){
+					if(sothich[j].checked==true){
+						a= a+"   "+sothich[j].value;
+					}
+						
+				}
+
+
+
+
+			if(hoten==''||sdt==''){
+				alert("Thông tin không hợp lệ,yêu cầu nhập lại");
+				return false;
+			}
+		
+			for(var i=0;i<gender.length;i++){
+				if(gender[i].value=="nữ"&&gender[i].checked==true){
+					
+
+					kq.innerHTML="Họ tên: "+ hoten +"<br>"+"Số điện thoại: "+ sdt+"<br>"+"Giới tính: "+gender[i].value+"<br>"+"Sở thích: "+a;
+					// for(var j=0;j<sothich.length;j++){
+					// 	if(sothich[j].checked==true){
+					// 		kq.value=kq.value+sothich[j].value+" ";
+					// 	}
+						
+					// }
+
+				}
+				else if(gender[i].value=="nam"&&gender[i].checked==true)
+				{
+					alert("Họ tên: "+ hoten +"   "+"Số điện thoại: "+ sdt+"   "+"Giới tính: "+gender[i].value+"   "+"Sở thích: " +a);
+
+					// for(var x=0;x<sothich.length;x++){
+					// 	if(sothich[x].checked==true){
+					// 		alert("Sở thích:"+sothich[x].value);
+					// 	}
+
+					// }
+
+					
+				}
+			}
+
+			
+			
+		
+	}
+	</script>
+</body>
+</html>

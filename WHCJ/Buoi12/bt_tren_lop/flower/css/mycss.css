@@ -1,0 +1,32 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+#wrapper{
+	width: 1010px;
+	min-height: 1000px;
+	margin: 0px auto;
+	background: #f4f4f4;
+}
+#content_left{
+	width: 260px;
+	min-height: 500px;
+	background: yellow;
+	/*background: #f4f4f4;*/
+
+}
+#content_right{
+	width: 750px;
+	min-height: 500px;
+	background: red;
+	/*background: #f4f4f4;*/
+}
+.content_me{
+	float:left;
+	
+	width: 100%;
+	
+	
+
+}

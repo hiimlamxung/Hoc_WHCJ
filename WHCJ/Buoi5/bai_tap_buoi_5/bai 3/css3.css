@@ -1,0 +1,141 @@
+*{margin: 0px;}
+#wrapper{
+	margin: 0px auto !important;
+	width: 1000px;
+	}
+#search{
+	background: black;
+	width: 100%;
+	min-height: 68px;
+
+}
+#search a{
+
+	width: 15%;
+}
+#search a img{
+	width: 100%;
+}
+#form{
+	width: 70%;
+	position: relative;
+	margin-left: 5px;
+}
+input[type="text"]{
+	width: 99%;
+	height: 30px;
+	border-radius: 15px;
+}
+input[type="image"]{
+	width: 4%;
+	position: absolute;
+	right: 15px;
+	top:5px;
+
+}
+.floatsearch{
+	float: left;
+}
+#user{
+	margin-left: 20px;
+	text-decoration: none;
+	max-width: 8%;
+	color: white;
+}
+marquee{
+	border: solid 1px red;
+	color: white;
+	width: 848px;
+	border-left: none;
+
+}
+#banner{
+	width: 100%;
+	min-height: 100px;
+	
+}
+#banner img{
+	width: 100%;
+	height: 280px;
+	margin-top: -5px;
+}
+#select{
+	margin-top: -4px;
+	background: black;
+	width: 100%;
+	min-height: 30px;
+
+}
+#select ul li{
+	float: left;
+	padding-top:5px;
+	list-style-type: none;
+	margin-left:130px;
+}
+#select ul li a:hover{
+	color: #FCD731;
+}
+#select ul li a{
+	color: white;
+	text-decoration: none;
+}
+#main{
+	width: 100%;
+	min-height: 750px;
+
+}
+#menu{
+	width: 25%;
+	background: black;
+	min-height: 500px;
+}
+#menu ul a li{ 
+color: #FCD731;
+list-style-type: none;
+border: dotted 1px white;
+padding: 20px 60px;
+
+}
+#menu ul a{
+	text-decoration: none;
+}
+#menu ul{display: inline}
+#menu ul a li:hover{
+	background: white;
+}
+.floatmain{
+	float: left;
+}
+#content{
+	width: 75%;
+	min-height: 750px;
+}
+#footer{
+	width: 100%;
+	min-height: 200px;
+	background: #393938;
+}
+.floatft{
+	float:left;
+	text-align: center;
+	padding: 5px;
+	color: #FCD731;
+	border: outset 1px white;
+	font-size: 14px;
+}
+#footer1{
+	width: 32.1%;
+	min-height: 150px;
+}
+#footer2{
+	width: 32.1%;
+	min-height: 150px;
+}
+#footer3{
+	width: 32.1%;
+	min-height: 150px;
+}
+#txtft{
+	color: #FCD731;
+	text-align: center;
+}

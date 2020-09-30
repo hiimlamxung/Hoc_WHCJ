@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var s=prompt('Mời bạn nhập quãng đường S đã đi được');
+		var second;
+		if(s==''||isNaN(s)){
+			alert('Bạn nhập sai quãng đường,yêu cầu kiểm tra lại');
+		}
+		else if(s>0&&s<=3000){
+			alert('Bạn đã đi được'+' '+s+' '+'giây');
+		}
+		else if(s>3000&&s<=5000){
+			var change1=s-3000;
+			second=3000+(change1*2);
+			alert('Bạn đã đi được'+ ' '+second+' ' +' giây');
+		}
+		else if(s>5000&&s<=6000){
+			var change2=s-5000;
+			second=7000+(change2*3);
+			alert('Bạn đã đi được'+' ' +second+' '+' giây');
+		}
+		else if(s>6000){
+			var change3=s-6000;
+			second=10000+(change3*5);
+			alert('Bạn đã đi được '+' '+second+' '+'giây');
+		}
+	
+	</script>
+	
+</body>
+</html>

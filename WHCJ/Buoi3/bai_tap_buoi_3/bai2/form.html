@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng ký</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="hoten" placeholder="Nhập tên bạn" required=""><br><br>
+		<label for="sdt">Số điện thoại</label><input type="number" id="sdt" required=""><br><br>
+		<label for="email">Email</label><input type="email" id="email" required="" placeholder="abc@gmail.com"><br><br>
+		<label for="pass">Mật Khẩu</label><input type="password" id="pass" required=""><br><br>
+		<label>Giới tính</label><input type="radio" name="gioitinh" id="nam"  checked value="1"><label for="nam">Nam </label><input type="radio" name="gioitinh" id="nu" value="0"><label for="nu">Nữ </label><input type="radio" name="gioitinh" id="3d" value="3d"><label for="3d">3D</label><br><br>
+		<label>Sở thích</label><input type="checkbox" name="st" id="bongda" checked="" value="bongda"><label for="bongda">Bóng đá </label><input type="checkbox" name="st" id="bongban"><label for="bongban" value="bongban">Bóng bàn </label><input type="checkbox" name="st" id="caulong" value="caulong"><label for="caulong">Cầu lông</label><br><br>
+		<label>Hình ảnh</label><input type="file"><br><br>
+		<select>
+			<option>--Chọn thành phố--</option>
+			<optgroup label="Miền Bắc">
+			<option value="hanoi">Hà Nội</option>
+			<option value="haiphong">Hải Phòng</option>
+			</optgroup>
+			<optgroup label="Miền Nam">
+				<option value="hcm">TP.Hồ Chí Minh</option>
+				<option value="cantho">Cần Thơ</option>
+			</optgroup>
+		</select><br><br>
+		<textarea cols="50" rows="10" placeholder="Ghi chú..."></textarea><br>
+		<input type="submit" value="Đăng ký"><input type="reset" value="Nhập lại">
+	</form>
+</body>
+</html>

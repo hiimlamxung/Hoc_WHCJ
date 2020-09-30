@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		td{
+			width: 50%;
+			height: 25%;
+		}
+	</style>
+</head>
+<body>
+	<table border="1" style="width: 500px; height: 200px;">
+		<tr>
+			<td>Nhập tháng</td>
+			<td><input type="text" name="" id="month"></td>
+		</tr>
+		<tr>
+			<td>Nhập năm</td>
+			<td><input type="text" name="" id="year"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="submit" name="" value="Tính toán" onclick="Tinh()"></td>
+			
+		</tr>
+		<tr>
+			<td>Số ngày trong tháng:</td>
+			<td id="ketqua"></td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function Tinh(){
+
+			var thang=document.getElementById('month').value;
+			var nam=document.getElementById('year').value;
+			var result=document.getElementById('ketqua');
+			if(thang==''||isNaN(thang)||nam==''||isNaN(nam)){
+				alert('Bạn đã nhập sai tháng và năm,yêu cầu kiểm tra lại');
+			}
+			
+			else if((nam%4==0&&nam%100!=0)||nam%400==0){
+				switch (thang){
+					case '1':
+					case '3':
+					case '5':
+					case '7':
+					case '8':
+					case '10':
+					case '12':
+					result.innerHTML='31 ngày';
+					break;
+					case '2':
+					result.innerHTML='29 ngày';
+					break;
+					case '2':
+					case '4':
+					case '6':
+					case '9':
+					case '11':
+					result.innerHTML='30 ngày';
+					break;
+				default: 
+				result.innerHTML='Rất tiếc không có tháng này trong năm';
+
+				}
+			}
+		
+		else {
+			switch (thang){
+					case '1':
+					case '3':
+					case '5':
+					case '7':
+					case '8':
+					case '10':
+					case '12':
+					result.innerHTML='31 ngày';
+					break;
+					case '2':
+					result.innerHTML='28 ngày';
+					break;
+					case '2':
+					case '4':
+					case '6':
+					case '9':
+					case '11':
+					result.innerHTML='30 ngày';
+					break;
+					default: result.innerHTML='Rất tiếc không có tháng này trong năm';
+			}
+		
+		
+		}
+	}
+	</script>
+</body>
+</html>
